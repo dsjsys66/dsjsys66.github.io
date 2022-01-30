@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{   
+    int hang= 7;
+    int lie= 2; 
+	int max=0;  
+	int t=0; 
+    int a[7][2];  
+    int i,j;
+	for(i=0;i<hang;i++)
+	{
+	   for(j=0;j<lie;j++) 
+       {
+       	scanf("%d",&a[i][j]); 
+	   }
+    }
+	for(i=0;i<hang;i++)
+	{
+		int x;
+		x=a[i][0]+a[i][1];
+		if(max<x){
+			max=x;
+			t=i;}
+	}
+	if(max<=8)
+	printf("0");
+	else printf("%d",t+1);
+	
+}
