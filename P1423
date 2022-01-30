@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	float x,sum=2,a=2;
+	int i=1;
+	cin>>x;
+	while(sum<x){
+		a=a*0.98;
+		sum=sum+a;
+		i++;
+	}
+	cout<<i<<endl;
+	return 0;
+}
+
